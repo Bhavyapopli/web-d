@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavya Fitness</title>
+    </head>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset  */
+        body{
+            font-family: 'Ubuntu', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            background: url("https://cdn.pixabay.com/photo/2016/11/19/12/43/barbell-1839087_960_720.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .left{
+            /* border: 2px solid red;  */
+            display: inline-block;
+            position: absolute;
+            top: 34px;
+            left: 20px;
+        }
+        .mid{
+            /* border: 2px solid green;  */
+            display: block;
+            width: 45%;
+            margin: 34px auto;
+        }
+        .right{
+            /* border: 2px solid yellow;  */
+            display: inline-block;
+            position: absolute;
+            top: 34px;
+            right: 20px;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 25px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 25px 15px;
+        }
+        .navbar li a:hover{
+            text-decoration: underline;
+            color: grey;
+        }
+        .left img{
+            width: 123px;
+        }
+        .left div{
+            color: white;
+            text-align: center;
+        }
+        .btn{
+            font-family: 'Ubuntu', sans-serif;
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(106, 83, 83);
+        }
+        .container{
+            position: absolute;
+            right: 10px;
+            top: 80px;
+            border: 2px solid white;
+            width: 33%;
+            border-radius: 28px;
+            margin: 108px 80px;
+            padding: 75px;
+        }
+        .container h1{
+            text-align: center;
+            font-size: 33px;
+            color: white;
+        }
+        .formgroup input{
+            font-family: 'Ubuntu', sans-serif;
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 3px;
+            border: 2px solid black;
+            margin: 6px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+        .container button{
+            display: block;
+            margin: 14px auto;
+            width: 30%;
+        }
+    </style>
+<body>
+    <div class="left">
+         <!-- left box for logo  -->
+         <img src="https://media.istockphoto.com/id/1334162226/photo/barbell-weightlifting-bodybuilding-symbol-stone-wall-background.jpg?s=612x612&w=is&k=20&c=bMkaQF5HrYGnoJs1R5rtrsOS6khgKzUqs67AdhC6vGo=" alt="">
+        <div>Bhavya Fitness</div>
+    </div>
+       <div class="mid">
+         <!-- mid box for navbar -->
+         <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact us</a></li>
+
+         </ul>
+       </div>
+       <div class="right">
+          <!-- right box for search  -->
+        <button class="btn">Call us</button>
+        <button class="btn">Email us</button>
+       </div>
+       <div class="container">
+        <h1>Join The Best Gym Of Hansi Now!!</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name=" " placeholder="Enter your name">
+                </div>
+            <div class="formgroup">
+                <input type="number" name=" " placeholder="Enter your age">
+                </div>
+             <div class="formgroup">
+                <input type="text" name=" " placeholder="Enter your gender">
+                </div>
+            <div class="formgroup">
+                <input type="text" name=" " placeholder="Enter your locality">
+                </div>
+            <div class="formgroup">
+                <input type="email" name=" " placeholder="Enter your email">
+                </div>    
+            <div class="formgroup">
+                <input type="number" name=" " placeholder="Enter your phone number">
+            </div>    
+            <button class="btn">Submit</button>
+        </form>
+       </div>
+</body>
+</html>
